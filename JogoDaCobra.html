@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Alisson Martins">
+	<title>Recriando o jogo da cobra</title>
+	<link rel="stylesheet" href="css/cobra.css">
+</head>
+<body>
+
+	<div class="container" id="geral">
+		
+		<h1>JOGO DA COBRINHA!</h1>
+		<small><b>Jogador(a): </b><label id="jogador"></label> | <b>Nível de dificuldade: </b><span id="dificuldade"></span></small>
+
+		<canvas id="cobra" width="512" height="512"></canvas>
+
+	</div>
+
+	<div class="painel-jogo" id="painel-jogo">
+
+		<h1>Jogo da Cobrinha!</h1>
+		
+		<label for="nickname">Nickname: </label>
+		<input type="text" name="nickname" id="nickname" placeholder="Insira seu nickname">
+
+
+		<label>Nível do jogo:</label>
+		<select onchange="nivel()" name="nivel" id="nivel-jogo">
+			<option value="150">Fácil</option>
+			<option value="100">Médio</option>
+			<option value="50">Difícil</option>
+		</select>
+
+		<input onclick="ComecarJogo()" type="submit" value="Jogar" class="btn-blue">
+
+	</div>
+
+	<script src="js/cobra.js"></script>
+	<script src="js/config.js"></script>
+
+</body>
+</html>
