@@ -24,5 +24,5 @@ function config(){
 function ComecarJogo(){
 	config();
 	let number = nivel();
-	let jogo = setInterval(iniciarJogo, number);
+	jogo = setInterval(iniciarJogo, number);
 };

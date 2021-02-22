@@ -1,11 +1,6 @@
-	function ComecarJogo(){
-		jogar();
-		let number = nivel();
-		let jogo = setInterval(iniciarJogo, number);
-	}
-
 	let canvas = document.getElementById("cobra");
 	let context = canvas.getContext("2d");
+	let jogo;
 	let box = 32;
 	let cobra = [];
 	cobra[0] = {
@@ -85,4 +80,4 @@
 		cobra.unshift(newHead);
 	}
 
-	// let jogo = setInterval(iniciarJogo, number);
+	// let jogo = setInterval(iniciarJogo, 100);
